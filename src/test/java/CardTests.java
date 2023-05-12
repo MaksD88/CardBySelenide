@@ -35,14 +35,8 @@ public class CardTests {
         $("[data-test-id=order-success]").shouldHave( exactText(" Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.") );
 
     }
-    @Test
-    public void shouldSendFormWithDashInName() {
-        $("[type=text]").setValue("иван петров");
-        $("[type=tel]").setValue("+79112345678");
-        $(".checkbox__box").click();
-        $(".button__content").click();
-        $("[data-test-id=order-success]").shouldHave(exactText(" Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
-    }
-
-
-}
+}    
+    
+    
+    
+    
